@@ -1,0 +1,515 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+About Page
+{%endblock%}
+{% block content%}
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Intro + Photo -->
+        <div class="row align-items-center justify-content-between gy-5 mb-5">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-delay="150">
+            <div class="intro-content">
+              <span class="eyebrow">Hello there</span>
+              <h2 class="headline">Hi, I'm Ajith G - a calm-minded creative developer crafting serene digital journeys</h2>
+              <p class="lead">
+                Results-oriented Backend Engineer with over 3 years of experience specializing in Python and the Django ecosystem. Expert in architecting RESTful APIs using Django REST Framework (DRF) and optimizing database performance with PostgreSQL
+              </p>
+              
+
+              <div class="cta-group">
+                <a href="#portfolio" class="btn-ghost">
+                  View My Work <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="{% static 'Ajith.pdf' %}" class="link-underline">
+                  Download Resume <i class="bi bi-download"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
+            <figure class="profile-figure text-center text-lg-end">
+              <img src="{% static 'assets/img/profile/profile-square-11.jpg' %}" alt="Portrait of Alex" class="img-fluid profile-photo">
+            </figure>
+          </div>
+        </div>
+        <!-- End Intro + Photo -->
+
+        <!-- Skills Grid -->
+<div class="mb-5">
+  <div class="row g-4">
+    <!-- Backend Mastery -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-item">
+        <i class="bi bi-filetype-py"></i>
+        <h3>Python & Django</h3>
+        <p>Expertise in MVT architecture, DRF, and robust REST API development.</p>
+      </div>
+    </div>
+
+    <!-- Real-time & Async -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+      <div class="skill-item">
+        <i class="bi bi-lightning-charge"></i>
+        <h3>Async & Tasks</h3>
+        <p>Scalable processing with Celery, Redis, and real-time WebSockets.</p>
+      </div>
+    </div>
+
+    <!-- Frontend Development -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-item">
+        <i class="bi bi-code-slash"></i>
+        <h3>React & Frontend</h3>
+        <p>Building dynamic UIs with React.js, JavaScript, and Modern CSS/Bootstrap.</p>
+      </div>
+    </div>
+
+    <!-- Database Management -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+      <div class="skill-item">
+        <i class="bi bi-database"></i>
+        <h3>Databases</h3>
+        <p>Proficient in PostgreSQL, MySQL, and efficient Schema Design.</p>
+      </div>
+    </div>
+
+    <!-- Data & Analysis -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-item">
+        <i class="bi bi-graph-up-arrow"></i>
+        <h3>Data Science</h3>
+        <p>Harnessing NumPy and Pandas for advanced data manipulation/analysis.</p>
+      </div>
+    </div>
+
+    <!-- Integrations -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+      <div class="skill-item">
+        <i class="bi bi-plugin"></i>
+        <h3>Third-party APIs</h3>
+        <p>Seamless integration with services like Zoop, Leegality, and Auth providers.</p>
+      </div>
+    </div>
+
+    <!-- DevOps & Tools -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+      <div class="skill-item">
+        <i class="bi bi-terminal"></i>
+        <h3>DevOps & Tools</h3>
+        <p>Containerization with Docker and version control using Git/GitHub.</p>
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+      <div class="skill-item">
+        <i class="bi bi-shield-lock"></i>
+        <h3>Security & Auth</h3>
+        <p>Implementing secure Authentication, Authorization, and API Design.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Skills Grid -->
+
+
+        
+
+        <!-- Quote -->
+        <blockquote class="personal-quote text-center mb-5" data-aos="fade-down" data-aos-delay="200">
+          <p>"Building clean and meaningful experiences through thoughtful code and quiet design."</p>
+        </blockquote>
+        <!-- End Quote -->
+
+        <!-- Fun Facts -->
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="120">
+            <div class="fact-pill">
+              <i class="bi bi-magic"></i>
+              <span>Minimalism</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="160">
+            <div class="fact-pill">
+              <i class="bi bi-headphones"></i>
+              <span>Lo-fi Beats</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+            <div class="fact-pill">
+              <i class="bi bi-geo-alt"></i>
+              <span>City Walks</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="240">
+            <div class="fact-pill">
+              <i class="bi bi-brush"></i>
+              <span>Sketching</span>
+            </div>
+          </div>
+        </div>
+        <!-- End Fun Facts -->
+
+      </div>
+
+    </section><!-- /About Section -->
+
+<!-- Skills Section -->
+<section id="skills" class="skills section">
+
+  <div class="container section-title text-center">
+    <h2>Technical Skills</h2>
+    <p>Backend-focused developer with strong expertise in API development, databases, DevOps tools, architecture concepts, and third-party integrations.</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 text-center">
+
+      <!-- ================= BACKEND ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="55">
+          <h6 class="mt-2">Python</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="55">
+          <h6 class="mt-2">Django</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="55">
+          <h6 class="mt-2">Django REST Framework (DRF)</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="55">
+          <h6 class="mt-2">Flask</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://img.icons8.com/color/96/api-settings.png" width="55">
+          <h6 class="mt-2">REST API Development</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="data:image/png;base64,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" width="55">
+          <h6 class="mt-2">WebSockets</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="data:image/png;base64,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" width="55">
+          <h6 class="mt-2">Celery</h6>
+        </div>
+      </div>
+
+      <!-- ================= FRONTEND ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="55">
+          <h6 class="mt-2">React.js</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="55">
+          <h6 class="mt-2">JavaScript</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="55">
+          <h6 class="mt-2">HTML5</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="55">
+          <h6 class="mt-2">CSS3</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="55">
+          <h6 class="mt-2">Bootstrap</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" width="55">
+          <h6 class="mt-2">jQuery</h6>
+        </div>
+      </div>
+
+      <!-- ================= DATABASE ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="55">
+          <h6 class="mt-2">MySQL</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="55">
+          <h6 class="mt-2">PostgreSQL</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="55">
+          <h6 class="mt-2">SQLite3</h6>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="skill-box p-4 shadow-sm rounded">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="55">
+          <h6 class="mt-2">Redis</h6>
+        </div>
+      </div>
+
+      <!-- ================= TOOLS ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="55"><h6 class="mt-2">Git</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="55"><h6 class="mt-2">GitHub</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="55"><h6 class="mt-2">GitLab</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="data:image/jpeg;base64,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" width="55"><h6 class="mt-2">Postman</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm7uLM08lcCENkl2jklx2tDH4Iu1CIGoCiZA&s" width="55"><h6 class="mt-2">Ngrok</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="55"><h6 class="mt-2">Docker</h6></div></div>
+
+      <!-- ================= LIBRARIES ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="55"><h6 class="mt-2">NumPy</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="55"><h6 class="mt-2">Pandas</h6></div></div>
+
+      <!-- ================= ARCHITECTURE ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/workflow.png" width="55"><h6 class="mt-2">MVC</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/design.png" width="55"><h6 class="mt-2">MVT</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/api.png" width="55"><h6 class="mt-2">API Design</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/lock--v1.png" width="55"><h6 class="mt-2">Authentication & Authorization</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/process.png" width="55"><h6 class="mt-2">Asynchronous Task Processing</h6></div></div>
+
+      <!-- ================= INTEGRATIONS ================= -->
+
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/api-settings.png" width="55"><h6 class="mt-2">Zoop API Integration</h6></div></div>
+      <div class="col-6 col-md-4 col-lg-3"><div class="skill-box p-4 shadow-sm rounded"><img src="https://img.icons8.com/color/96/api-settings.png" width="55"><h6 class="mt-2">Leegality API Integration</h6></div></div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="avatars d-flex align-items-center">
+              <img src="{% static 'assets/img/person/person-m-2.webp' %}" alt="Avatar 1" class="rounded-circle" loading="lazy">
+              <img src="{% static 'assets/img/person/person-m-3.webp' %}" alt="Avatar 2" class="rounded-circle" loading="lazy">
+              <img src="{% static 'assets/img/person/person-f-5.webp' %}" alt="Avatar 3" class="rounded-circle" loading="lazy">
+              <img src="{% static 'assets/img/person/person-m-5.webp' %}" alt="Avatar 4" class="rounded-circle" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row counters">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <h2><span data-purecounter-start="0" data-purecounter-end="185" data-purecounter-duration="1" class="purecounter"></span>+</h2>
+                <p>Nemo enim ipsam</p>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <h2><span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>K</h2>
+                <p>Voluptatem sequi</p>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                <h2><span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter"></span>+</h2>
+                <p>Dolor sit consectetur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Stats Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section py-5">
+
+  <div class="container text-center mb-5">
+    <h2 class="fw-bold">What Clients Say</h2>
+    <p class="text-muted">Feedback from people I've worked with</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Testimonial 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card p-4">
+          <div class="mb-3">
+            <i class="bi bi-quote quote-icon"></i>
+          </div>
+          <p class="testimonial-text">
+            Delivered a high-quality Django REST API with excellent performance and clean architecture. Highly professional and reliable developer.
+          </p>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img me-3">
+            <div>
+              <h6 class="mb-0 fw-bold">Rahul Sharma</h6>
+              <small class="text-muted">Startup Founder</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card p-4">
+          <div class="mb-3">
+            <i class="bi bi-quote quote-icon"></i>
+          </div>
+          <p class="testimonial-text">
+            Excellent work on integrating third-party APIs like Zoop and Leegality. Smooth communication and fast delivery.
+          </p>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-img me-3">
+            <div>
+              <h6 class="mb-0 fw-bold">Priya Mehta</h6>
+              <small class="text-muted">Product Manager</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card p-4">
+          <div class="mb-3">
+            <i class="bi bi-quote quote-icon"></i>
+          </div>
+          <p class="testimonial-text">
+            Strong backend skills with Celery, Redis, and Docker deployment. Highly recommended for scalable web applications.
+          </p>
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="testimonial-img me-3">
+            <div>
+              <h6 class="mb-0 fw-bold">Amit Verma</h6>
+              <small class="text-muted">Tech Lead</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+  </main>
+  <style>
+    .testimonial-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-icon {
+  font-size: 30px;
+  color: #0d6efd;
+}
+
+.stars i {
+  color: #ffc107;
+}
+    .skill-box {
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.skill-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+</style>
+{% endblock %}

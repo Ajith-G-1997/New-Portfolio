@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+Developer Portfolio
+{% endblock %}
+
+{% block content %}
+<main class="main">
+
+  <section id="portfolio" class="portfolio section">
+
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2>My Development Projects</h2>
+      <p>Here are some backend & full-stack projects built using Django, DRF, React, and modern web technologies.</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="img-fluid" alt="Django Project">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>E-Commerce REST API</h4>
+              <p>Built using Django REST Framework with JWT Authentication & Payment Integration.</p>
+              <div class="portfolio-tags">
+                <span>Django</span>
+                <span>DRF</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" class="img-fluid" alt="React App">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>React + Django Dashboard</h4>
+              <p>Full-stack dashboard with REST API integration, authentication & role-based access.</p>
+              <div class="portfolio-tags">
+                <span>React</span>
+                <span>API</span>
+                <span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="img-fluid" alt="WebSocket App">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>Real-Time Chat Application</h4>
+              <p>Implemented using Django Channels & WebSockets with Redis backend.</p>
+              <div class="portfolio-tags">
+                <span>WebSockets</span>
+                <span>Redis</span>
+                <span>Asynchronous</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="img-fluid" alt="API Integration">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>Third-Party API Integration</h4>
+              <p>Integrated Zoop & Leegality APIs with secure authentication & webhook handling.</p>
+              <div class="portfolio-tags">
+                <span>API Integration</span>
+                <span>Authentication</span>
+                <span>Security</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDQqIa4sj49UZ6tsN3VxGOZvp5Lzis7-mrYg&s" class="img-fluid" alt="Task Queue">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>Background Task Processing</h4>
+              <p>Asynchronous task execution using Celery & Redis for email & report generation.</p>
+              <div class="portfolio-tags">
+                <span>Celery</span>
+                <span>Redis</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-card shadow-lg rounded-4 overflow-hidden">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="img-fluid" alt="Data Project">
+            </div>
+            <div class="portfolio-info p-4">
+              <h4>Data Analysis Dashboard</h4>
+              <p>Data visualization project using Pandas & NumPy integrated with Django backend.</p>
+              <div class="portfolio-tags">
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+{% endblock %}

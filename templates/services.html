@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+Services Page
+{%endblock%}
+{% block content%}
+  <main class="main">
+
+   <!-- Services Section -->
+<section id="services" class="services section py-5">
+
+  <div class="container section-title text-center mb-5">
+    <h2 class="fw-bold">My Services</h2>
+    <p>
+      Backend-focused development services specializing in scalable APIs, integrations, and performance optimization.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Backend Development -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-server"></i>
+          </div>
+          <h4>Backend Development</h4>
+          <p>
+            Build robust backend systems using Python, Django, and Django REST Framework.
+            Focused on clean architecture, scalability, and performance optimization.
+          </p>
+        </div>
+      </div>
+
+      <!-- REST API Development -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h4>REST API Development</h4>
+          <p>
+            Design and implement secure, scalable RESTful APIs with authentication,
+            validation, error handling, and third-party integrations.
+          </p>
+        </div>
+      </div>
+
+      <!-- Third Party Integration -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-link-45deg"></i>
+          </div>
+          <h4>Third-Party API Integration</h4>
+          <p>
+            Integration of KYC APIs (Zoop), Digital Agreement & eSign (Leegality),
+            SMS gateways, and other external services with secure data handling.
+          </p>
+        </div>
+      </div>
+
+      <!-- Database Design -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-database"></i>
+          </div>
+          <h4>Database Design & Optimization</h4>
+          <p>
+            Design relational databases (MySQL, PostgreSQL, SQLite) and optimize SQL queries
+            for better performance and scalability.
+          </p>
+        </div>
+      </div>
+
+      <!-- Asynchronous Task Processing -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-lightning-charge"></i>
+          </div>
+          <h4>Asynchronous Task Processing</h4>
+          <p>
+            Implement background jobs using Celery & Redis for email services,
+            notifications, heavy processing tasks, and scheduled workflows.
+          </p>
+        </div>
+      </div>
+
+      <!-- Full Stack Development -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card p-4 h-100">
+          <div class="service-icon mb-3">
+            <i class="bi bi-laptop"></i>
+          </div>
+          <h4>Full Stack Development</h4>
+          <p>
+            Develop complete web applications using Django (Backend) and React.js (Frontend)
+            with responsive UI and clean integration.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+  </main>
+<style>
+  .service-card {
+  background: var(--surface-color);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon i {
+  font-size: 35px;
+  color: #0d6efd;
+}
+
+.service-card h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+</style>
+ {% endblock %}
